@@ -22,46 +22,45 @@ body {
 
 .greetings {
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 500;
+  text-align: center;
+  position: absolute; /* Cambia el posicionamiento a absoluto */
+  top: 20px; /* Posiciona el mensaje en la parte superior */
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  z-index: 100; /* Asegura que el mensaje esté al frente */
 }
 
 .greetings > span {
   animation: glow 2.5s ease-in-out infinite;
   display: inline-block;
+  color: #fff;
+  text-shadow: 0 0 12px #0066ff, 0 0 50px #0066ff, 0 0 100px #0066ff;
 }
 
-/* Definición de la animación de resplandor */
 @keyframes glow {
   0%, 100% {
-      color: #fff;
-      text-shadow: 0 0 12px #00ff99, 0 0 50px #00ff99, 0 0 100px #00ff99;
+    color: #fff;
+    text-shadow: 0 0 12px #0066ff, 0 0 50px #0066ff, 0 0 100px #0066ff;
   }
   10%, 90% {
-      color: #696565;
-      text-shadow: none;
+    color: #696565;
+    text-shadow: none;
   }
 }
 
-/* Variable para el retraso */
-.greetings {
-  --delay: 0s;
+@keyframes colorChange {
+  0%, 50% {
+    background-image: linear-gradient(to top, #006dfc, #006dfc); /* Blue */
+  }
+  100% {
+    background-image: linear-gradient(to top, #ffeb3b, #ffeb3b); /* Yellow */
+  }
 }
 
-.greetings > span {
-  animation-delay: var(--delay);
+.flower__leaf {
+  animation: colorChange 3s infinite alternate;
 }
-
-/* Aplicar el retraso en función del índice del elemento */
-.greetings > span:nth-child(1) { --delay: 0s; }
-.greetings > span:nth-child(2) { --delay: 0.2s; }
-.greetings > span:nth-child(3) { --delay: 0.4s; }
-.greetings > span:nth-child(4) { --delay: 0.6s; }
-.greetings > span:nth-child(5) { --delay: 0.8s; }
-.greetings > span:nth-child(6) { --delay: 1s; }
-.greetings > span:nth-child(7) { --delay: 1.2s; }
-.greetings > span:nth-child(8) { --delay: 1.4s; }
-.greetings > span:nth-child(9) { --delay: 1.6s; }
-.greetings > span:nth-child(10) { --delay: 1.8s; }
 
 
 
@@ -240,6 +239,8 @@ body {
   z-index: 1;
   opacity: 0.8;
 }
+
+
 .flower__white-circle {
   position: absolute;
   left: -3.5vmin;
