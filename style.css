@@ -14,10 +14,32 @@ body{
     align-items: center;
     justify-content: center;
     background-color: black;
+    overflow: hidden;
+    animation: fadeIn 2s ease-in-out;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .greetings {
     font-size: 3rem;
     font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: slideInFromLeft 1s ease-in-out both;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .greetings > span {
@@ -62,12 +84,25 @@ body{
     color: #ff0015;
     text-align: center;
     padding: 0 20px; 
+    animation: fadeIn 2s ease-in-out both 1s;
 }
 
 .button a{
     text-decoration: none;
     font-size: 1rem;
     color: #fff;
+    animation: fadeInUp 1.5s ease-in-out both 1.5s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -84,6 +119,15 @@ body{
     .button a{
         font-size: .5rem;
     }
+    .button button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .description{
@@ -99,18 +143,21 @@ body{
     cursor: pointer;
     position: relative; /* Necesario para el resplandor */
     border-radius: 25px; /* Esquinas redondeadas */
-    transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(255, 0, 0, 0.3);
   }
   
   /* Estilo para el enlace dentro del botón */
   .button button a {
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: inherit; /* Hereda el color del texto del botón */
+    font-weight: bold;
   }
   
   /* Efecto de resplandor al pasar el cursor sobre el botón */
   .button button:hover {
     background-color: rgb(255, 50, 50); /* Cambia el color de fondo al pasar el mouse a naranja */
+    transform: scale(1.05);
     box-shadow: 0 0 10px rgb(255, 0, 128), 0 0 20px rgb(255, 0, 0), 0 0 30px rgb(255, 0, 0); /* Efecto de resplandor amarillo */
   }
   
@@ -119,4 +166,21 @@ body{
     width: 250px;
     height:250px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    animation: zoomIn 2s ease-in-out both;
   }
+
+  .img:hover {
+    transform: scale(1.1); /* Efecto de zoom al hacer hover */
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
