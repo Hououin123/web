@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
 *{
-    font-family: 'Poppins',cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     color: azure;
@@ -13,8 +16,8 @@ body{
     background-color: black;
 }
 .greetings {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 .greetings > span {
@@ -54,29 +57,32 @@ body{
 
 
 .description{
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ff0015;
+    text-align: center;
+    padding: 0 20px; 
 }
 
 .button a{
     text-decoration: none;
-    font-size: 0.5rem;
-    color: #111;
+    font-size: 1rem;
+    color: #fff;
 }
 
-@media screen and (max-width:574px){
+@media screen and (max-width:600px){
     .greetings{
         display: block;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 500;
         text-align: center;
     }
     .description{
-        font-size: 0.5rem;
+        font-size: 1.2rem;
     }
     
     .button a{
-        font-size: .3rem;
+        font-size: .5rem;
     }
 }
 
@@ -88,11 +94,11 @@ body{
 .button button {
     background-color: rgb(255, 0, 0); /* Fondo amarillo */
     border: none; /* Sin bordes */
-    padding: 5px 10px; /* Ajusta el relleno según tu preferencia */
-    font-size: 10px; /* Tamaño de fuente */
+    padding: 15px 30px; /* Ajusta el relleno según tu preferencia */
+    font-size: 1.2rem; /* Tamaño de fuente */
     cursor: pointer;
     position: relative; /* Necesario para el resplandor */
-    border-radius: 10px; /* Esquinas redondeadas */
+    border-radius: 25px; /* Esquinas redondeadas */
     transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
   }
   
@@ -104,12 +110,13 @@ body{
   
   /* Efecto de resplandor al pasar el cursor sobre el botón */
   .button button:hover {
-    background-color: rgb(255, 0, 0); /* Cambia el color de fondo al pasar el mouse a naranja */
+    background-color: rgb(255, 50, 50); /* Cambia el color de fondo al pasar el mouse a naranja */
     box-shadow: 0 0 10px rgb(255, 0, 128), 0 0 20px rgb(255, 0, 0), 0 0 30px rgb(255, 0, 0); /* Efecto de resplandor amarillo */
   }
   
   .img {
     border-radius: 40%;
-    width: 210px;
-    height:210px;
+    width: 250px;
+    height:250px;
+    margin-bottom: 20px;
   }
