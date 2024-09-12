@@ -10,40 +10,30 @@
   --dark-color: #0d1021;
 }
 
-@media (max-width: 600px) {
+/* Ajustes para iPhone 11/12 (ancho de 375px) */
+@media (max-width: 375px) {
   .greetings {
-    font-size: 1.5rem;
-    top: 10px;
+    font-size: 1.5rem; /* Reducir tamaño de fuente */
+    top: 10px; /* Ajustar margen superior */
   }
-
+  
   .flowers {
-    transform: scale(0.7); /* Reduce el tamaño de las flores en pantallas pequeñas */
+    transform: scale(0.8); /* Reducir un poco el tamaño de las flores */
   }
-
-  .flower {
-    bottom: 5vmin; /* Asegura que las flores no salgan del viewport */
-  }
-
+  
   .flower__leaf {
-    width: 6vmin; /* Reduce el tamaño de las hojas */
+    width: 6vmin; /* Ajustar el tamaño de las hojas */
     height: 8vmin;
   }
 
   .flower__line {
-    height: 45vmin; /* Ajusta la altura de las líneas de las flores */
-  }
-
-  .flower__white-circle {
-    width: 7vmin; /* Ajusta el tamaño del círculo blanco central */
-    height: 3vmin;
+    height: 50vmin; /* Reducir la altura de los tallos */
   }
   
-  .flower__grass {
-    bottom: 8vmin; /* Ajusta la posición del pasto */
-  }
-
-  .long-g {
-    bottom: 15vmin; /* Ajusta la posición de los elementos largos */
+  /* Ajustes específicos para flores */
+  .flower--1, .flower--2, .flower--3, .flower--4 {
+    left: 50%; /* Centrar cada flor si es necesario */
+    transform: translateX(-50%);
   }
 }
 
@@ -59,8 +49,8 @@ body {
 }
 
 .greetings {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 300;
   text-align: center;
   position: absolute; /* Cambia el posicionamiento a absoluto */
   top: 20px; /* Posiciona el mensaje en la parte superior */
