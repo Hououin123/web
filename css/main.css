@@ -12,7 +12,8 @@
 
 body {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   min-height: 100vh;
   background-color: var(--dark-color);
@@ -48,6 +49,48 @@ body {
     text-shadow: none;
   }
 }
+
+/* Estilos para pantallas pequeñas, como las de iPhone 11 y 12 */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 14px; /* Reduce el tamaño base de la fuente */
+  }
+  body {
+      flex-direction: column; /* Asegura que los elementos se alineen verticalmente */
+  }
+
+  .greetings {
+      font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+      top: 10px;
+  }
+
+  .flowers {
+      transform: scale(0.7); /* Reduce el tamaño de las flores para pantallas pequeñas */
+  }
+
+  .flower {
+      bottom: 5vmin;
+  }
+
+  .flower__leaf {
+      width: 6vmin; /* Ajusta el tamaño de las hojas */
+      height: 8vmin;
+  }
+
+  .flower__line {
+      height: 40vmin; /* Reduce la altura del tallo de las flores */
+  }
+
+  .long-g .leaf {
+      --w: 10vmin; /* Reduce el tamaño de las hojas largas */
+      --h: 30vmin;
+  }
+
+  .long-g {
+      bottom: 15vmin; /* Ajusta la posición de las hojas largas */
+  }
+}
+
 
 @keyframes colorChange {
   0%, 50% {
