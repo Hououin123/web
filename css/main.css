@@ -10,10 +10,47 @@
   --dark-color: #0d1021;
 }
 
+@media (max-width: 600px) {
+  .greetings {
+    font-size: 1.5rem;
+    top: 10px;
+  }
+
+  .flowers {
+    transform: scale(0.7); /* Reduce el tamaño de las flores en pantallas pequeñas */
+  }
+
+  .flower {
+    bottom: 5vmin; /* Asegura que las flores no salgan del viewport */
+  }
+
+  .flower__leaf {
+    width: 6vmin; /* Reduce el tamaño de las hojas */
+    height: 8vmin;
+  }
+
+  .flower__line {
+    height: 45vmin; /* Ajusta la altura de las líneas de las flores */
+  }
+
+  .flower__white-circle {
+    width: 7vmin; /* Ajusta el tamaño del círculo blanco central */
+    height: 3vmin;
+  }
+  
+  .flower__grass {
+    bottom: 8vmin; /* Ajusta la posición del pasto */
+  }
+
+  .long-g {
+    bottom: 15vmin; /* Ajusta la posición de los elementos largos */
+  }
+}
+
+
 body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
   background-color: var(--dark-color);
@@ -49,48 +86,6 @@ body {
     text-shadow: none;
   }
 }
-
-/* Estilos para pantallas pequeñas, como las de iPhone 11 y 12 */
-@media only screen and (max-width: 767px) {
-  html {
-    font-size: 14px; /* Reduce el tamaño base de la fuente */
-  }
-  body {
-      flex-direction: column; /* Asegura que los elementos se alineen verticalmente */
-  }
-
-  .greetings {
-      font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
-      top: 10px;
-  }
-
-  .flowers {
-      transform: scale(0.7); /* Reduce el tamaño de las flores para pantallas pequeñas */
-  }
-
-  .flower {
-      bottom: 5vmin;
-  }
-
-  .flower__leaf {
-      width: 6vmin; /* Ajusta el tamaño de las hojas */
-      height: 8vmin;
-  }
-
-  .flower__line {
-      height: 40vmin; /* Reduce la altura del tallo de las flores */
-  }
-
-  .long-g .leaf {
-      --w: 10vmin; /* Reduce el tamaño de las hojas largas */
-      --h: 30vmin;
-  }
-
-  .long-g {
-      bottom: 15vmin; /* Ajusta la posición de las hojas largas */
-  }
-}
-
 
 @keyframes colorChange {
   0%, 50% {
