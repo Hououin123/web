@@ -113,10 +113,11 @@ body {
 }
 
 .flowers {
-  position: absolute;
+  position: relative;
   left: 50%;
-  transform: scale(1.2);
-  transform: translateX(-50%) scale(1.2);
+  margin-bottom: 30px;
+  transform: scale(1.5);
+  transform: translateX(-50%) scale(1.5);
 }
 
 .flower {
