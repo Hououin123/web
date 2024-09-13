@@ -40,6 +40,14 @@ body {
     background-color: #fff;
 }
 
+@media (max-width: 768px) {
+  .flowers {
+      transform: scale(1.5); /* Ajusta el tamaño para pantallas más pequeñas */
+      left: 50%;
+      transform: translateX(-50%) scale(1.5);
+  }
+}
+
 
 .greetings > span {
   animation: glow 6s ease-in-out infinite;
@@ -105,8 +113,10 @@ body {
 }
 
 .flowers {
-  position: relative;
-  transform: scale(0.9);
+  position: absolute;
+  left: 50%;
+  transform: scale(1.2);
+  transform: translateX(-50%) scale(1.2);
 }
 
 .flower {
