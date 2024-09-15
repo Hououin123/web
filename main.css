@@ -13,9 +13,9 @@
 
 body {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 50vh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
