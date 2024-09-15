@@ -21,19 +21,19 @@ body {
   perspective: 1000px;
 }
 
-.greetings {
+/* .greetings {
   font-size: 1.5rem;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  position: absolute; /* Cambia el posicionamiento a absoluto */
-  top: 20px; /* Posiciona el mensaje en la parte superior */
+  position: absolute; 
+  top: 20px; 
   left: 50%;
-  transform: translateX(-50%); /* Centra horizontalmente */
-  z-index: 100; /* Asegura que el mensaje esté al frente */
-}
+  transform: translateX(-50%); 
+  z-index: 100; 
+} */
 
-.box {
+/* .box {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
@@ -64,7 +64,7 @@ body {
     color: #fff;
     text-shadow: 0 0 12px #fc00a8, 0 0 50px #fc00a8, 0 0 100px #fc00a8;
   }
-}
+} */
 
 @keyframes colorChange {
   0%, 25% {
