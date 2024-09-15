@@ -32,7 +32,8 @@ body {
   top: 10px; /* Posiciona el mensaje en la parte superior */
   left: 50%;
   transform: translateX(-50%); /* Centra horizontalmente */
-   /* Asegura que el mensaje esté al frente */
+  margin-bottom: 0px;
+  padding-bottom: 0%; /* Asegura que el mensaje esté al frente */
 }
 
 .box {
