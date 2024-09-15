@@ -25,7 +25,7 @@ body {
 
 .greetings {
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 330;
   font-family: cursive;
   text-align: center;
   position: fixed; /* Cambia el posicionamiento a absoluto */
