@@ -12,22 +12,24 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  align-items: end;
+  overflow: hidden; /* Para evitar scroll */
+  margin: 0;
+  padding: 0;
+  align-items: flex-end;
   justify-content: center;
-  min-height: 50vh;
   background-color: var(--dark-color);
-  overflow: hidden;
-  perspective: 1000px;
 }
 
 .greetings {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   position: absolute; /* Cambia el posicionamiento a absoluto */
-  top: 20px; /* Posiciona el mensaje en la parte superior */
+  top: 10px; /* Posiciona el mensaje en la parte superior */
   left: 50%;
   transform: translateX(-50%); /* Centra horizontalmente */
   z-index: 100; /* Asegura que el mensaje esté al frente */
@@ -111,7 +113,9 @@ body {
 
 .flower {
   position: absolute;
-  bottom: 10vmin;
+  max-width: 100vw;
+  max-height: 100vh;
+  bottom: 7vmin;
   transform-origin: bottom center;
   z-index: 10;
   --fl-speed: 0.8s;
