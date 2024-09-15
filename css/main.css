@@ -15,7 +15,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  overflow: hidden; /* Para evitar scroll */
+  overflow: hidden; 
   margin: 0;
   padding: 0;
   align-items: flex-end;
@@ -28,19 +28,16 @@ body {
   font-weight: 600;
   font-family: cursive;
   text-align: center;
-  position: fixed; /* Cambia el posicionamiento a absoluto */
-  top: 10px; /* Posiciona el mensaje en la parte superior */
+  position: fixed;
+  top: 10px;
   left: 50%;
-  transform: translateX(-50%); /* Centra horizontalmente */
+  transform: translateX(-50%);
   margin-top: 20px;
-  padding-top: 20px;
   margin-bottom: 0%;
+  padding-top: 20px;
   padding-bottom: 0%;
-  z-index: 100; /* Asegura que el mensaje esté al frente */
+  z-index: 100;
 }
-
-
-
 
 .greetings > span {
   animation: glow 6s ease-in-out infinite;
@@ -51,21 +48,23 @@ body {
 @keyframes glow {
   0%, 25% {
     color: #fff;
-    text-shadow: 0 0 12px #0066ff, 0 0 50px #0066ff, 0 0 100px #0066ff;
+    text-shadow: 0 0 12px #0066ff, 0 0 50px #0066ff, 0 0 100px #0066ff ;
   }
   26%, 50% {
     color: #fff;
-    text-shadow: 0 0 12px #fc0000, 0 0 50px #fc0000, 0 0 100px #fc0000;
+    text-shadow: 0 0 12px #fc0000, 0 0 50px #fc0000, 0 0 100px #fc0000 ; 
   }
   51%, 75% {
     color: #fff;
-    text-shadow: 0 0 12px #ffeb3b, 0 0 50px #ffeb3b, 0 0 100px #ffeb3b;
+    text-shadow: 0 0 12px #ffeb3b, 0 0 50px #ffeb3b, 0 0 100px #ffeb3b ;
   }
   100% {
     color: #fff;
-    text-shadow: 0 0 12px #fc00a8, 0 0 50px #fc00a8, 0 0 100px #fc00a8;
+    text-shadow: 0 0 12px #fc00a8, 0 0 50px #fc00a8, 0 0 100px #fc00a8 ;
   }
 }
+
+
 
 @keyframes colorChange {
   0%, 25% {
