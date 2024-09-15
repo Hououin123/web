@@ -26,7 +26,7 @@ body {
 .greetings {
   font-size: 0.9rem;
   font-weight: 200;
-  font-family: 'Roboto', sans-serif;
+  font-family: cursive;
   text-align: center;
   position: absolute; /* Cambia el posicionamiento a absoluto */
   top: 10px; /* Posiciona el mensaje en la parte superior */
@@ -110,12 +110,16 @@ body {
 .flowers {
   position: absolute;
   transform: scale(1.3);
+  margin-top: 0%;
+  margin-bottom: 40px;
 }
 
 .flower {
   position: absolute;
   max-width: 100vw;
   max-height: 100vh;
+  margin-top: 0%;
+  margin-bottom: 40px;
   bottom: 7vmin;
   transform-origin: bottom center;
   z-index: 10;
