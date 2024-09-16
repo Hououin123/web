@@ -109,8 +109,8 @@ body {
   transform: scale(1.1);
   margin-top: 0%;
   padding-top: 0%;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .flower {
@@ -119,8 +119,8 @@ body {
   max-height: 100vh;
   margin-top: 0%;
   padding-top: 0%;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
   bottom: 7vmin;
   transform-origin: bottom center;
   z-index: 10;
