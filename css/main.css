@@ -40,7 +40,7 @@ body {
 }
 
 .greetings > span {
-  animation: glow 6s ease-in-out infinite;
+  animation: glow 8s ease-in-out infinite;
   display: inline-block;
   color: #fff;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 .flower__leaf {
-  animation: colorChange 6s ease-in-out infinite;
+  animation: colorChange 8s ease-in-out infinite;
 }
 
 
