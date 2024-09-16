@@ -106,11 +106,11 @@ body {
 
 .flowers {
   position: absolute;
-  transform: scale(1.3);
+  transform: scale(1.2);
   margin-top: 0%;
   padding-top: 0%;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .flower {
@@ -119,8 +119,8 @@ body {
   max-height: 100vh;
   margin-top: 0%;
   padding-top: 0%;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
   bottom: 7vmin;
   transform-origin: bottom center;
   z-index: 10;
